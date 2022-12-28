@@ -453,17 +453,15 @@ Column {
 
             contentItem: Text {
                 text: parent.text
-                color: "#444"
+                color: "#585b70"
                 font.pointSize: root.font.pointSize
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                opacity: 0.5
             }
 
             background: Rectangle {
                 id: buttonBackground
-                color: "white"
-                opacity: 0.2
+                color: "#313244"
                 radius: config.RoundCorners || 0
             }
 
