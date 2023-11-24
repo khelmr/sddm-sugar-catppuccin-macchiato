@@ -9,7 +9,7 @@
 }:
 
 stdenv.mkDerivation rec {
-  pname = "sddm-sugar-catppuccin";
+  pname = "sddm-sugar-catppuccin-macchiato";
   version = "1.0.0";
 
   src = ./.;
@@ -24,13 +24,13 @@ stdenv.mkDerivation rec {
 
   dontBuild = true;
   installPhase = ''
-    mkdir -p $out/share/sddm/themes/sugar-catppuccin
-    cp -r * $out/share/sddm/themes/sugar-catppuccin/
+    mkdir -p $out/share/sddm/themes/sugar-catppuccin-macchiato
+    cp -r * $out/share/sddm/themes/sugar-catppuccin-macchiato/
   '';
 
   meta = with lib; {
     description = "Catppuccin SDDM theme";
-    homepage = "https://github.com/TiagoDamascena/sddm-sugar-catppuccin";
+    homepage = "https://github.com/Asfhen/sddm-sugar-catppuccin-macchiato";
     license = licenses.gpl3Only;
     platforms = platforms.all;
   }; 

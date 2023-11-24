@@ -176,7 +176,7 @@ Column {
             renderType: Text.QtRendering
             background: Rectangle {
                 color: "transparent"
-                border.color: root.palette.text
+                border.color: config.overlay0
                 border.width: parent.activeFocus ? 2 : 1
                 radius: config.RoundCorners || 0
             }
@@ -224,7 +224,7 @@ Column {
             renderType: Text.QtRendering
             background: Rectangle {
                 color: "transparent"
-                border.color: root.palette.text
+                border.color: config.overlay0
                 border.width: parent.activeFocus ? 2 : 1
                 radius: config.RoundCorners || 0
             }
@@ -285,7 +285,7 @@ Column {
                     anchors.centerIn: parent
                     implicitHeight: parent.width - 6
                     implicitWidth: parent.width - 6
-                    color: root.palette.text
+                    color: config.overlay0
                     opacity: revealSecret.checked ? 1 : 0
                 }
             }
@@ -453,7 +453,7 @@ Column {
 
             contentItem: Text {
                 text: parent.text
-                color: "#585b70"
+                color: config.text
                 font.pointSize: root.font.pointSize
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
@@ -461,7 +461,7 @@ Column {
 
             background: Rectangle {
                 id: buttonBackground
-                color: "#313244"
+                color: config.surface2
                 radius: config.RoundCorners || 0
             }
 
@@ -512,7 +512,7 @@ Column {
                     when: loginButton.enabled
                     PropertyChanges {
                         target: buttonBackground;
-                        color: root.palette.text;
+                        color: config.mauve;
                         opacity: 1
                     }
                     PropertyChanges {
